@@ -1,5 +1,7 @@
 # Do diário de obra ao cronograma
 
+**English.** From the site daily report to the schedule. Demonstration of a layer that connects the site daily report to the planner's schedule: field progress feeds planning, and an assisted review proposes resequencing and time buffers using real weather data, Monte Carlo simulation and fuzzy logic. Fictitious project. [Open the live page](https://mayarasouza94.github.io/diario-de-obra-integrado/).
+
 Demonstração de Mayara Souza: uma camada que liga o diário de obra ao cronograma do planejador e uma revisão
 assistida que propõe a reprogramação e os bolsões de folga. O cronograma continua sendo feito no programa de
 cronograma do planejador; a ferramenta recebe a programação da semana, devolve o avanço lançado pelo campo e

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do diário de obra ao cronograma · Obra A</title>
+<meta name="description" content="Demonstração: o diário de obra ligado ao cronograma do planejador, com revisão assistida por clima, Monte Carlo e lógica fuzzy.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mayarasouza94.github.io/diario-de-obra-integrado/">
+<meta property="og:title" content="Do diário de obra ao cronograma">
+<meta property="og:description" content="O avanço lançado pelo campo volta ao cronograma, e a revisão assistida propõe a reprogramação e os bolsões de folga.">
+<meta property="og:image" content="https://mayarasouza94.github.io/diario-de-obra-integrado/img/capa.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="app">
+  <main id="palco" aria-label="Animação das etapas"><div id="cena"></div><div id="espera">Preparando os cálculos</div></main>
+  <nav id="barra" aria-label="Reprodução">
+    <button id="bt-play" aria-label="Tocar"></button>
+    <div id="caps"></div>
+    <span id="tempo">0:00</span>
+    <button id="bt-rep" aria-label="Repetir"></button>
+  </nav>
+</div>
+<div id="fontes" role="dialog" aria-modal="true" aria-label="Fontes e premissas"><div class="fl">
+  <h2>Fontes e premissas</h2>
+  <ul>
+    <li><b>Obra fictícia.</b> Data center, dados simulados com semente fixa.</li>
+    <li><b>Clima.</b> Reanálise ERA5 no ponto da obra, região de Campinas (SP).</li>
+    <li><b>Mão de obra.</b> Dados da região pelo IBGE.</li>
+    <li><b>Rede.</b> Só ligações término-início, sem calendário de dias úteis; durações em dias corridos.</li>
+  </ul>
+  <h3>As quatro técnicas</h3>
+  <ul>
+    <li><b>Ritmo medido.</b> Avanço semanal de cada disciplina no diário contra o planejado, com no mínimo quatro semanas medidas.</li>
+    <li><b>Clima das semanas à frente.</b> Chance de dia perdido por chuva ou por vento, aplicada às tarefas a céu aberto e de içamento.</li>
+    <li><b>Monte Carlo.</b> Cenários com ritmo, clima e riscos sorteados; a distribuição dá a data mais provável e a de 8 em cada 10 cenários.</li>
+    <li><b>Lógica fuzzy.</b> Criticidade por variação da duração, em nove regras; define a exposição e a divisão do pulmão entre as tarefas críticas.</li>
+  </ul>
+  <div class="fc"><button class="bt p" id="fontes-x">Fechar</button></div>
+</div></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
